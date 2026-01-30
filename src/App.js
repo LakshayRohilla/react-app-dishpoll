@@ -1,11 +1,11 @@
 import './App.css';
+import NavBar from './components/navBar/navBar';
 
 function App() {
   return (
     <div className="App">
-      <p>App clean up</p>
+      <NavBar/>
     </div>
   );
 }
-
 export default App;
