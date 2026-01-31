@@ -1,70 +1,123 @@
-# Getting Started with Create React App
+# 🍽️ Dish Poll - Voting Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based web application that allows multiple users to vote for their favorite dishes and view poll results in real-time.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **User Authentication**: Login system with multiple user accounts
+- **Dish Voting**: 
+  - Vote for top 3 favorite dishes
+  - Rank dishes (Rank 1: 30 points, Rank 2: 20 points, Rank 3: 10 points)
+  - Edit votes anytime
+  - Automatic rank reassignment when conflicts occur
+- **Poll Results**: 
+  - View aggregated results from all users
+  - See dish rankings sorted by total points
+  - Track your own votes in the results
+  - Visual progress bars and statistics
+- **Persistent Storage**: Votes saved in localStorage
+- **Responsive Design**: Works on mobile, tablet, and desktop
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Tech Stack
 
-### `npm run build`
+- **Frontend Framework**: React.js
+- **State Management**: Redux Toolkit
+- **UI Library**: Material-UI (MUI)
+- **Routing**: React Router DOM
+- **API Calls**: RTK Query
+- **Notifications**: React Toastify
+- **Styling**: CSS, MUI sx prop
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# 🌍 Deployed Application
+ https://react-app-dishpoll.netlify.app/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# 💻 For local setup :
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📦 Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Before running this application, make sure you have the following installed:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Node.js** (v14 or higher)
+- **npm** (v6 or higher) or **yarn**
 
-## Learn More
+Check versions:
+```bash
+node --version
+npm --version
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🚀 Installation
+1. **Clone the repository**
+```bash
+git clone <repository-url>
+cd react-app-dishpoll
+```
+2. **Install dependencies**
+```bash
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ▶️ Running the Application
+Start the development server
+```bash
+npm start
+```
 
-### Code Splitting
+- The application will open automatically in your browser at: http://localhost:3000
+- If it doesn't open automatically, manually navigate to the URL above.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## 🧪 Testing the Application
+> ### ⚠️ Important Testing Instructions
+>To experience the full functionality of the Poll Results page, you need to:
+>
+>Login with multiple users and cast votes from each account
+Vote for different dishes with different ranks from each user
+View Poll Results to see aggregated data from all users
+Recommended Testing Flow:
+- Step 1: Vote as User 1
+1. Login with: username: amar | password: amar123
+2. Go to "Dishes" page
+3. Select and rank 3 dishes
+4. Logout
+- Step 2: Vote as User 2
+1. Login with: username: akbar | password: akbar123
+2. Go to "Dishes" page
+3. Select and rank 3 different dishes (or same with different ranks)
+4. Logout
+- Step 3: Vote as User 3
+1. Login with: username: antony | password: antony123
+2. Go to "Dishes" page
+3. Select and rank 3 dishes
+4. Go to "Poll Result" page
+5. See aggregated results with votes from all users
+- Step 4: View Complete Results
+1. Login with any user
+2. Navigate to "Poll Result" page
+3. You will now see:<br>
+   ✓ Total voters count<br>
+   ✓ Dishes ranked by total points<br>
+   ✓ Vote breakdown for each dish<br>
+   ✓ Your own votes highlighted<br>
+   ✓ Progress bars showing popularity<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 👤 Available Test Users:
+**Username ===> Password**
+1. amar ===> amar123	
+2. akbar ===> akbar123	
+3. antony ===>	antony123
+4. john	===> john123	
+5. paul ===> 	paul123	
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
