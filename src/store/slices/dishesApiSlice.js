@@ -1,3 +1,6 @@
+import { apiSlice } from "./apiSlice";
+import { DISHES_URL } from "../../constants";
+
 export const dishesApiSlice = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     getDishes: builder.query({
@@ -8,3 +11,5 @@ export const dishesApiSlice = apiSlice.injectEndpoints({
     }),
   }),
 });
+
+export const { useGetDishesQuery } = dishesApiSlice;

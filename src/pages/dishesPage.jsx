@@ -1,10 +1,11 @@
+import DishesFetcher from "../components/fetcher/dishesFetcher";
 import NavBar from "../components/navBar/navBar";
 
 const DishesPage = () => {
   return (
     <>
       <NavBar />
-      <p>Dishes Page</p>
+      <DishesFetcher/>
     </>
   );
 };
