@@ -10,28 +10,28 @@
     "id": 2,
     "username": "akbar",
     "password": "akbar123",
-    "name": "Jane Smith",
+    "name": "Akbar",
     "avatar": "https://i.pravatar.cc/150?img=5"
   },
   {
     "id": 3,
     "username": "antony",
     "password": "antony123",
-    "name": "Jane Smith",
+    "name": "Antony",
     "avatar": "https://i.pravatar.cc/150?img=12"
   },
   {
     "id": 4,
     "username": "john",
     "password": "john123",
-    "name": "Jane Smith",
+    "name": "John",
     "avatar": "https://i.pravatar.cc/150?img=9"
   },
   {
     "id": 5,
     "username": "paul",
     "password": "paul123",
-    "name": "Jane Smith",
+    "name": "Paul",
     "avatar": "https://i.pravatar.cc/150?img=31"
   }
 ]
